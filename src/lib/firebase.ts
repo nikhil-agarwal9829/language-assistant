@@ -35,7 +35,7 @@ if (typeof window !== 'undefined') {
 export { analytics };
 
 // Initialize Firestore with error handling
-const db = getFirestore(app);
+let db;
 try {
   db = getFirestore(app);
 } catch (error) {
