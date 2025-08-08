@@ -3,6 +3,8 @@
 > **Empowering seamless communication in healthcare with real-time translation and assistive technologies.**
 
 ---
+Project Deployment Link - https://language-assistant-alpha.vercel.app/
+---
 
 ## 📌 Problem Statement: **Multilingual Medical Translation Assistant (HC1)**
 
@@ -14,26 +16,8 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 ## 📸 Screenshots
 
 <p align="center">
-  <a href="https://ibb.co/N60P6K7p">
-    <img src="https://i.ibb.co/Z6QP6xNK/Screenshot-2025-08-08-081451.png" width="45%" />
-  </a>
-  <a href="https://ibb.co/YB9FzGkF">
-    <img src="https://i.ibb.co/ZzspnC8p/Screenshot-2025-08-08-081428.png" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://ibb.co/k6yr4kRG">
-    <img src="https://i.ibb.co/VpNhgr7L/Screenshot-2025-08-08-081422.png" width="45%" />
-  </a>
-  <a href="https://ibb.co/7dGThwps">
-    <img src="https://i.ibb.co/DH76dxM0/Screenshot-2025-08-08-081340.png" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://ibb.co/cX6YtPWY">
-    <img src="https://i.ibb.co/84rY2JyY/Screenshot-2025-08-08-081328.png" width="45%" />
+  <a href="https://ibb.co/5hhcXWFd">
+    <img src="https://i.ibb.co/HTTgLDd0/Screenshot-2025-08-08-081231.png" width="45%" />
   </a>
   <a href="https://ibb.co/MkBx01rY">
     <img src="https://i.ibb.co/d4mwYpFd/Screenshot-2025-08-08-081312.png" width="45%" />
@@ -41,10 +25,29 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 </p>
 
 <p align="center">
-  <a href="https://ibb.co/5hhcXWFd">
-    <img src="https://i.ibb.co/HTTgLDd0/Screenshot-2025-08-08-081231.png" width="45%" />
+  <a href="https://ibb.co/cX6YtPWY">
+    <img src="https://i.ibb.co/84rY2JyY/Screenshot-2025-08-08-081328.png" width="45%" />
+  </a>
+  <a href="https://ibb.co/7dGThwps">
+    <img src="https://i.ibb.co/DH76dxM0/Screenshot-2025-08-08-081340.png" width="45%" />
   </a>
 </p>
+
+<p align="center">
+  <a href="https://ibb.co/k6yr4kRG">
+    <img src="https://i.ibb.co/VpNhgr7L/Screenshot-2025-08-08-081422.png" width="45%" />
+  </a>
+  <a href="https://ibb.co/YB9FzGkF">
+    <img src="https://i.ibb.co/ZzspnC8p/Screenshot-2025-08-08-081428.png" width="45%" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://ibb.co/N60P6K7p">
+    <img src="https://i.ibb.co/Z6QP6xNK/Screenshot-2025-08-08-081451.png" width="45%" />
+  </a>
+</p>
+
 
 ---
 
