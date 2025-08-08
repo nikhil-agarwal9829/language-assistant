@@ -43,6 +43,7 @@ class SignLanguageService {
     detectionConfidence: 0.6,
     trackingConfidence: 0.6,
   };
+  private cdnLoaded = false;
 
   isSupported(): boolean {
     return typeof navigator !== 'undefined' && !!navigator.mediaDevices && !!window; 
@@ -63,10 +64,16 @@ class SignLanguageService {
       // noop
     }
 
-    // Resolve Hands constructor across different module shapes
-    const HandsCtor: any = (HandsPkg as any).Hands || (HandsPkg as any).default?.Hands || (HandsPkg as any);
+    // Resolve Hands constructor across different module shapes, with CDN fallback
+    let HandsCtor: any = (HandsPkg as any).Hands || (HandsPkg as any).default?.Hands;
+    if (typeof HandsCtor !== 'function') {
+      // Try global after loading CDN script
+      await this.loadHandsFromCdnOnce();
+      HandsCtor = (globalThis as any).Hands;
+    }
     if (typeof HandsCtor !== 'function') {
       console.error('Invalid @mediapipe/hands module shape. Exported keys:', Object.keys(HandsPkg as any));
+      console.error('Global Hands available?', !!(globalThis as any).Hands);
       throw new Error('MediaPipe Hands constructor not found');
     }
 
@@ -223,6 +230,25 @@ class SignLanguageService {
 
   private emit(): void {
     if (this.onUpdate) this.onUpdate(this.textBuffer.join(''));
+  }
+
+  private async loadHandsFromCdnOnce(): Promise<void> {
+    if (this.cdnLoaded) return;
+    await new Promise<void>((resolve, reject) => {
+      const existing = document.querySelector('script[data-mediapipe-hands]') as HTMLScriptElement | null;
+      if (existing) {
+        this.cdnLoaded = true;
+        resolve();
+        return;
+      }
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js';
+      script.async = true;
+      script.setAttribute('data-mediapipe-hands', 'true');
+      script.onload = () => { this.cdnLoaded = true; resolve(); };
+      script.onerror = () => reject(new Error('Failed to load MediaPipe Hands from CDN'));
+      document.head.appendChild(script);
+    });
   }
 
   private majorityVote(arr: string[]): string {
