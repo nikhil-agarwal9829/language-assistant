@@ -93,10 +93,7 @@ export const SignCapture: React.FC<SignCaptureProps> = ({ onConfirm, onClose }) 
                 <Button variant="ghost" onClick={onClose}>Close</Button>
               )}
             </div>
-            <div className="text-xs text-muted-foreground">
-              Tip: This MVP recognizes a tiny subset (e.g., I / B heuristic) and inserts space when the hand
-              disappears. Replace with a trained TFJS model for better accuracy.
-            </div>
+            {/* Tip removed as requested */}
           </div>
         </div>
       </CardContent>

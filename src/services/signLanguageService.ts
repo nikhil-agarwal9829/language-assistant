@@ -151,11 +151,37 @@ class SignLanguageService {
 
       try {
         const estimator = new GestureEstimator(getASLGestures());
-        const estimation = estimator.estimate(lm, 7.5);
+        const estimation = estimator.estimate(lm, 6.0);
         if (estimation.gestures && estimation.gestures.length > 0) {
-          // pick highest score
           estimation.gestures.sort((a: any, b: any) => b.score - a.score);
-          letter = estimation.gestures[0].name;
+          const top = estimation.gestures[0];
+          const second = estimation.gestures[1];
+
+          // Compute simple extension heuristics to avoid defaulting to 'A'
+          const indexTip = lm[8];
+          const indexPip = lm[6];
+          const middleTip = lm[12];
+          const middlePip = lm[10];
+          const ringTip = lm[16];
+          const ringPip = lm[14];
+          const pinkyTip = lm[20];
+          const pinkyPip = lm[18];
+
+          const isIndexExtended = indexTip.y < indexPip.y;
+          const isMiddleExtended = middleTip.y < middlePip.y;
+          const isRingExtended = ringTip.y < ringPip.y;
+          const isPinkyExtended = pinkyTip.y < pinkyPip.y;
+          const numExtended = [isIndexExtended, isMiddleExtended, isRingExtended, isPinkyExtended].filter(Boolean).length;
+
+          let choose = top;
+          // If classifier says 'A' but multiple fingers look extended, prefer the next candidate
+          if (top && top.name === 'A' && numExtended >= 2 && second) {
+            choose = second;
+          }
+          // Require a basic confidence
+          if (choose && choose.score >= 5.0) {
+            letter = choose.name;
+          }
         }
       } catch (_) {
         // fallback minimal heuristic
