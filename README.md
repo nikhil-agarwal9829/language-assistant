@@ -11,6 +11,24 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 **KONG** bridges this gap by offering **real-time translation** for spoken, written, and signed communication — ensuring every patient’s voice is heard and understood.
 
 ---
+## 📸 Screenshots
+
+| Home Page | Translation Interface |
+|-----------|-----------------------|
+| ![Home](https://i.ibb.co/N60P6K7/home.png) | ![Translation](https://i.ibb.co/YB9FzGkF/translation.png) |
+
+| ASL Recognition | ASL to Text Output |
+|-----------------|--------------------|
+| ![ASL Input](https://i.ibb.co/k6yr4kRG/asl-input.png) | ![ASL Output](https://i.ibb.co/7dGThwp/asl-output.png) |
+
+| Speech-to-Text Module | Text-to-Speech Module |
+|-----------------------|-----------------------|
+| ![Speech-to-Text](https://i.ibb.co/cX6YtPW/speech-to-text.png) | ![Text-to-Speech](https://i.ibb.co/MkBx01r/text-to-speech.png) |
+
+| Multi-Language Support |
+|------------------------|
+| ![Multi-Language](https://i.ibb.co/5hhcXWF/multi-language.png) |
+---
 
 ## ✨ Features
 
