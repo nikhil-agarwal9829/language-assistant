@@ -13,21 +13,39 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 ---
 ## 📸 Screenshots
 
-| Home Page | Translation Interface |
-|-----------|-----------------------|
-| ![Home](https://i.ibb.co/N60P6K7/home.png) | ![Translation](https://i.ibb.co/YB9FzGkF/translation.png) |
+<p align="center">
+  <a href="https://ibb.co/N60P6K7p">
+    <img src="https://i.ibb.co/Z6QP6xNK/Screenshot-2025-08-08-081451.png" width="45%" />
+  </a>
+  <a href="https://ibb.co/YB9FzGkF">
+    <img src="https://i.ibb.co/ZzspnC8p/Screenshot-2025-08-08-081428.png" width="45%" />
+  </a>
+</p>
 
-| ASL Recognition | ASL to Text Output |
-|-----------------|--------------------|
-| ![ASL Input](https://i.ibb.co/k6yr4kRG/asl-input.png) | ![ASL Output](https://i.ibb.co/7dGThwp/asl-output.png) |
+<p align="center">
+  <a href="https://ibb.co/k6yr4kRG">
+    <img src="https://i.ibb.co/VpNhgr7L/Screenshot-2025-08-08-081422.png" width="45%" />
+  </a>
+  <a href="https://ibb.co/7dGThwps">
+    <img src="https://i.ibb.co/DH76dxM0/Screenshot-2025-08-08-081340.png" width="45%" />
+  </a>
+</p>
 
-| Speech-to-Text Module | Text-to-Speech Module |
-|-----------------------|-----------------------|
-| ![Speech-to-Text](https://i.ibb.co/cX6YtPW/speech-to-text.png) | ![Text-to-Speech](https://i.ibb.co/MkBx01r/text-to-speech.png) |
+<p align="center">
+  <a href="https://ibb.co/cX6YtPWY">
+    <img src="https://i.ibb.co/84rY2JyY/Screenshot-2025-08-08-081328.png" width="45%" />
+  </a>
+  <a href="https://ibb.co/MkBx01rY">
+    <img src="https://i.ibb.co/d4mwYpFd/Screenshot-2025-08-08-081312.png" width="45%" />
+  </a>
+</p>
 
-| Multi-Language Support |
-|------------------------|
-| ![Multi-Language](https://i.ibb.co/5hhcXWF/multi-language.png) |
+<p align="center">
+  <a href="https://ibb.co/5hhcXWFd">
+    <img src="https://i.ibb.co/HTTgLDd0/Screenshot-2025-08-08-081231.png" width="45%" />
+  </a>
+</p>
+
 ---
 
 ## ✨ Features
