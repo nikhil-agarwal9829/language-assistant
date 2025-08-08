@@ -10,7 +10,7 @@
 import * as tf from '@tensorflow/tfjs';
 import { GestureEstimator } from 'fingerpose';
 import { getASLGestures } from './asl/gestures';
-import { Hands } from '@mediapipe/hands';
+import * as HandsPkg from '@mediapipe/hands';
 
 // MediaPipe Hands is imported statically to avoid ambiguous module shapes during dynamic import
 
@@ -63,8 +63,15 @@ class SignLanguageService {
       // noop
     }
 
-    // Create hands instance using static import
-    this.hands = new Hands({
+    // Resolve Hands constructor across different module shapes
+    const HandsCtor: any = (HandsPkg as any).Hands || (HandsPkg as any).default?.Hands || (HandsPkg as any);
+    if (typeof HandsCtor !== 'function') {
+      console.error('Invalid @mediapipe/hands module shape. Exported keys:', Object.keys(HandsPkg as any));
+      throw new Error('MediaPipe Hands constructor not found');
+    }
+
+    // Create hands instance
+    this.hands = new HandsCtor({
       locateFile: (file: string) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`,
     });
     this.hands.setOptions({
