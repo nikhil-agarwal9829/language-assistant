@@ -10,11 +10,9 @@
 import * as tf from '@tensorflow/tfjs';
 import { GestureEstimator } from 'fingerpose';
 import { getASLGestures } from './asl/gestures';
+import { Hands } from '@mediapipe/hands';
 
-// MediaPipe modules are shipped as global-friendly packages; types are limited, so we use any
-// Lazy import to avoid SSR issues
-let HandsModule: any;
-let CameraUtils: any;
+// MediaPipe Hands is imported statically to avoid ambiguous module shapes during dynamic import
 
 export type SignUpdateHandler = (partialText: string, debug?: { landmarks?: Array<{x:number;y:number}> }) => void;
 
@@ -65,18 +63,7 @@ class SignLanguageService {
       // noop
     }
 
-    if (!HandsModule) {
-      // Dynamic imports
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      HandsModule = await import('@mediapipe/hands');
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      CameraUtils = await import('@mediapipe/camera_utils');
-    }
-
-    // Create hands instance
-    const { Hands } = HandsModule;
+    // Create hands instance using static import
     this.hands = new Hands({
       locateFile: (file: string) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`,
     });
