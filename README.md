@@ -16,37 +16,38 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 ## 📸 Screenshots
 
 <p align="center">
-  <a href="https://ibb.co/5hhcXWFd">
-    <img src="https://i.ibb.co/HTTgLDd0/Screenshot-2025-08-08-081231.png" width="45%" />
+  <!-- 1: Home Page -->
+  <a href="https://ibb.co/N60P6K7p">
+    <img src="https://i.ibb.co/Z6QP6xNK/Screenshot-2025-08-08-081451.png" width="45%" />
   </a>
-  <a href="https://ibb.co/MkBx01rY">
-    <img src="https://i.ibb.co/d4mwYpFd/Screenshot-2025-08-08-081312.png" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://ibb.co/cX6YtPWY">
-    <img src="https://i.ibb.co/84rY2JyY/Screenshot-2025-08-08-081328.png" width="45%" />
-  </a>
-  <a href="https://ibb.co/7dGThwps">
-    <img src="https://i.ibb.co/DH76dxM0/Screenshot-2025-08-08-081340.png" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://ibb.co/k6yr4kRG">
-    <img src="https://i.ibb.co/VpNhgr7L/Screenshot-2025-08-08-081422.png" width="45%" />
-  </a>
+  <!-- 2: Doctor Created a Room -->
   <a href="https://ibb.co/YB9FzGkF">
     <img src="https://i.ibb.co/ZzspnC8p/Screenshot-2025-08-08-081428.png" width="45%" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://ibb.co/N60P6K7p">
-    <img src="https://i.ibb.co/Z6QP6xNK/Screenshot-2025-08-08-081451.png" width="45%" />
+  <!-- 3: Patient Joined with Room Code -->
+  <a href="https://ibb.co/k6yr4kRG">
+    <img src="https://i.ibb.co/VpNhgr7L/Screenshot-2025-08-08-081422.png" width="45%" />
+  </a>
+  <!-- 4: Text Sent by Doctor -->
+  <a href="https://ibb.co/7dGThwps">
+    <img src="https://i.ibb.co/DH76dxM0/Screenshot-2025-08-08-081340.png" width="45%" />
   </a>
 </p>
+
+<p align="center">
+  <!-- 5: Patient Received in Translated Text -->
+  <a href="https://ibb.co/cX6YtPWY">
+    <img src="https://i.ibb.co/84rY2JyY/Screenshot-2025-08-08-081328.png" width="45%" />
+  </a>
+  <!-- 6: Sign Language -->
+  <a href="https://ibb.co/MkBx01rY">
+    <img src="https://i.ibb.co/d4mwYpFd/Screenshot-2025-08-08-081312.png" width="45%" />
+  </a>
+</p>
+
 
 
 ---
