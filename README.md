@@ -15,42 +15,42 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 ---
 ## 📸 Screenshots
 
-### 6️⃣ Sign Language
+### 6️⃣ HOME PAGE
 <p align="center">
   <a href="https://ibb.co/MkBx01rY">
     <img src="https://i.ibb.co/d4mwYpFd/Screenshot-2025-08-08-081312.png" width="70%" />
   </a>
 </p>
 
-### 5️⃣ Patient Received in Translated Text
+### 5️⃣ Doctor creates a room
 <p align="center">
   <a href="https://ibb.co/cX6YtPWY">
     <img src="https://i.ibb.co/84rY2JyY/Screenshot-2025-08-08-081328.png" width="70%" />
   </a>
 </p>
 
-### 4️⃣ Text Sent by Doctor
+### 4️⃣ Patient Joined with Room Code
 <p align="center">
   <a href="https://ibb.co/7dGThwps">
     <img src="https://i.ibb.co/DH76dxM0/Screenshot-2025-08-08-081340.png" width="70%" />
   </a>
 </p>
 
-### 3️⃣ Patient Joined with Room Code
+### 3️⃣ text/voice message sent by doctor
 <p align="center">
   <a href="https://ibb.co/k6yr4kRG">
     <img src="https://i.ibb.co/VpNhgr7L/Screenshot-2025-08-08-081422.png" width="70%" />
   </a>
 </p>
 
-### 2️⃣ Doctor Created a Room
+### 2️⃣ Patient Received in Translated Text
 <p align="center">
   <a href="https://ibb.co/YB9FzGkF">
     <img src="https://i.ibb.co/ZzspnC8p/Screenshot-2025-08-08-081428.png" width="70%" />
   </a>
 </p>
 
-### 1️⃣ Home Page
+### 1️⃣ Sign Language
 <p align="center">
   <a href="https://ibb.co/N60P6K7p">
     <img src="https://i.ibb.co/Z6QP6xNK/Screenshot-2025-08-08-081451.png" width="70%" />
