@@ -31,8 +31,6 @@ Language barriers are a major cause of **miscommunication** in healthcare. Patie
 - **🔊 Text-to-Speech Output**  
   Natural AI voice for translated medical content to improve understanding.
   
-- **📱 Intuitive Web Interface**  
-  **Light-pink hospital-themed UI** for a patient-friendly experience.
 
 ---
 
