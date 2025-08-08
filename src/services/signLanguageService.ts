@@ -8,12 +8,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as tf from '@tensorflow/tfjs';
+import { GestureEstimator } from 'fingerpose';
+import { getASLGestures } from './asl/gestures';
 
 // MediaPipe modules are shipped as global-friendly packages; types are limited, so we use any
 // Lazy import to avoid SSR issues
 let HandsModule: any;
 let CameraUtils: any;
-let Fingerpose: any;
 
 export type SignUpdateHandler = (partialText: string, debug?: { landmarks?: Array<{x:number;y:number}> }) => void;
 
@@ -72,9 +73,6 @@ class SignLanguageService {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       CameraUtils = await import('@mediapipe/camera_utils');
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      Fingerpose = await import('fingerpose');
     }
 
     // Create hands instance
@@ -151,8 +149,6 @@ class SignLanguageService {
       let letter = '';
 
       try {
-        const { GestureEstimator } = Fingerpose;
-        const { getASLGestures } = require('./asl/gestures');
         const estimator = new GestureEstimator(getASLGestures());
         const estimation = estimator.estimate(lm, 7.5);
         if (estimation.gestures && estimation.gestures.length > 0) {
